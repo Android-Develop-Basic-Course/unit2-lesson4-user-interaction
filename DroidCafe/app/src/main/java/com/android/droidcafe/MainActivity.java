@@ -1,6 +1,7 @@
 package com.android.droidcafe;
 
 import android.os.Bundle;
+import android.widget.Toast;
 import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
@@ -67,5 +68,31 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public void displayToast(String message) {
+        Toast.makeText(getApplicationContext(), message,
+                Toast.LENGTH_SHORT).show();
+    }
+
+    /**
+     * Shows a message that the donut image was clicked.
+     */
+    public void showDonutOrder(View view) {
+        displayToast(getString(R.string.donut_order_message));
+    }
+
+    /**
+     * Shows a message that the ice cream sandwich image was clicked.
+     */
+    public void showIceCreamOrder(View view) {
+        displayToast(getString(R.string.ice_cream_order_message));
+    }
+
+    /**
+     * Shows a message that the froyo image was clicked.
+     */
+    public void showFroyoOrder(View view) {
+        displayToast(getString(R.string.froyo_order_message));
     }
 }

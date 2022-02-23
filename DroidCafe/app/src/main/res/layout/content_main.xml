@@ -40,7 +40,8 @@
             app:layout_constraintTop_toBottomOf="@+id/textintro"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="@dimen/margin_wide"
-            android:layout_marginStart="@dimen/margin_wide"/>
+            android:layout_marginStart="@dimen/margin_wide"
+            android:onClick="showDonutOrder"/>
     <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -50,7 +51,8 @@
             app:layout_constraintTop_toBottomOf="@+id/donut"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="@dimen/margin_wide"
-            android:layout_marginStart="@dimen/margin_wide"/>
+            android:layout_marginStart="@dimen/margin_wide"
+            android:onClick="showIceCreamOrder"/>
     <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -60,7 +62,8 @@
             app:layout_constraintTop_toBottomOf="@+id/ice_cream"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="@dimen/margin_wide"
-            android:layout_marginStart="@dimen/margin_wide"/>
+            android:layout_marginStart="@dimen/margin_wide"
+            android:onClick="showFroyoOrder"/>
     <TextView
             android:text="@string/donut_description"
             android:layout_width="0dp"
