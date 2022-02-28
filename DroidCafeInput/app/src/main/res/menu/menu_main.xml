@@ -8,14 +8,17 @@
           app:showAsAction="never"/>
     <item android:id="@+id/action_order"
           android:title="@string/action_order"
+          android:icon="@drawable/ic_shopping_cart"
           android:orderInCategory="10"
-          app:showAsAction="never"/>
+          app:showAsAction="always"/>
     <item android:id="@+id/action_status"
           android:title="@string/action_status"
+          android:icon="@drawable/ic_action_status"
           android:orderInCategory="20"
-          app:showAsAction="never"/>
+          app:showAsAction="always"/>
     <item android:id="@+id/action_favorites"
           android:title="@string/action_favourites"
+          android:icon="@drawable/ic_action_favorite"
           android:orderInCategory="30"
-          app:showAsAction="never"/>
+          app:showAsAction="ifRoom"/>
 </menu>
