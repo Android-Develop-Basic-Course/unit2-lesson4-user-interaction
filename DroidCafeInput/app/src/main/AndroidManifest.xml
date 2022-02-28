@@ -10,8 +10,13 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.DroidCafeInput">
         <activity
-                android:name=".OrderActivity"
-                android:exported="true"/>
+                android:name="com.android.droidcafeinput.OrderActivity"
+                android:label="Order Activity"
+                android:parentActivityName=".MainActivity">
+
+                <meta-data android:name="android.support.PARENT_ACTIVITY"
+                   android:value=".MainActivity"/>
+        </activity>
         <activity
                 android:name=".MainActivity"
                 android:exported="true"
@@ -23,6 +28,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>
